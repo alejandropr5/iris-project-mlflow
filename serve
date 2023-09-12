@@ -1,0 +1,1 @@
+mlflow models serve --model-uri models:/iris-model-test/Production -p 8081 --no-conda
