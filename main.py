@@ -419,8 +419,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Create a new experiment in MLflow and get experiment ID
-    # experiment_name = "Iris Classifier"
-    # experiment_id = create_experiment(experiment_name)
+    experiment_name = "Iris Classifier"
+    experiment_id = create_experiment(experiment_name)
 
     # move_model_to_production_from_run_name(
     #     experiment_id,
@@ -430,7 +430,7 @@ if __name__ == "__main__":
     # promote_model_to_stage("iris-model-test", "Production")
     # get_list_of_model()
 
-    # run_experiment(experiment_id, n_splits=args.nsplits)
+    run_experiment(experiment_id, n_splits=args.nsplits)
 
     # list_experiment_models(experiment_id)
     # run = get_best_run(experiment_id, metric="accuracy")
